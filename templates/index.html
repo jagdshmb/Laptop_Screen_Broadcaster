@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+/* Header/Logo Title */
+.header {
+  padding: 1px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 20px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 650px;
+  position: relative;
+  margin: auto;
+  height: 250px;
+}
+
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+nav {
+  float: left;
+  width: 100%;
+  /*height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 10px;
+}
+article {
+  float: left;
+  padding: 5px;
+  width: 100%;
+  background-color: #f1f1f1;
+  /*height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+}
+body, html {
+  height: 100%;
+}
+</style>
+<title>LAPTOP SCREEN BROADCASTER</title>
+</head>
+<body>
+  <div class="header">
+    <h1 style ="font-size: 25px;">JSS SCIENCE AND TECHNOLOGY UNIVERSITY , MYSURU</h1>
+    <h2 style ="font-size: 23px;">Laptop Screen Broadcaster</h2>
+    <p style="font-size: 20px;">EC67L: Design and Implementation Lab</p>
+  </div>
+<div class="slideshow-container">
+  <img id="imgPrev"  class="img-responsive" alt="live image" src="{{ url_for('video_feed') }}" style="width:100%; height:100%;"/>
+</div>
+<section>
+  <article>
+    <table style="width:100%">
+      <tr>
+        <th>Name</th>
+        <th>USN No.</th>
+        <th>Roll No.</th>
+      </tr>
+      <tr>
+        <td>Hithesh H</td>
+        <td>01JST18EC042</td>
+        <td>19</td>
+      </tr>
+      <tr>
+        <td>Jagadeesh M B</td>
+        <td>01JST18EC043</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>K P Koushik</td>
+        <td>01JST18EC047</td>
+        <td>23</td>
+      </tr>
+    </table>
+  </article>
+</section>
+<nav>
+  <h4 style ="font-size: 18px;" >Under the guidance of</h4>
+  <h2>Shivaprasad N and Gayathri H M</h2>
+  <p1>Assistant Professors,</p1>
+  <p2>JSSSTU(SJCE), Mysuru</p2>
+</nav>
+</body>
+</html> 
