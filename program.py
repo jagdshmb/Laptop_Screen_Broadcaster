@@ -17,6 +17,7 @@ def index():
     """Video streaming home page."""
     return render_template('index.html')
 
+"""Taking screenshot of a screen and converting into bytes"""
 def gen():
     while(True):
         image = pyautogui.screenshot()
