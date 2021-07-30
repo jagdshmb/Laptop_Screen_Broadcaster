@@ -17,10 +17,12 @@ A project to share laptop screen in web application to the devices in the intra 
 ![Laptop Screen](./screenshots/laptop.PNG)
 ![Web application](./screenshots/smartphone.jpg)
 
-## Technologies used
+## Text stack and Packages used:
 
-1. Python(3.6.5)
-2. Flask (Webframework)
+1. Python (3.6.5)
+2. flask (Web framework)
 3. HTML (UI)
 4. CSS (UI)
+5. pyautogui
+6. socket
 
